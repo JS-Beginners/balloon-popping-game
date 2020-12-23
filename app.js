@@ -7,6 +7,7 @@ document.addEventListener('mouseover', function(e){
                 e.target.style.backgroundColor = "#ededed";
                 e.target.textContent = "POP!";
                 popped++;
+				e.target.classList.remove("balloon");
                 removeEvent(e);
                 checkAllPopped();
     }   
